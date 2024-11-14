@@ -1,0 +1,15 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+/* Body and Container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

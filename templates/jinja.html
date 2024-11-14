@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{{Title}}</title>
+</head>
+<body>
+    <h2><i>Hello, {{name}}!</i></h2><br>
+
+    <h1>Looping in Jinja</h1><br>
+    {% for i in range(0,3) %}
+        <h2><i>Hello, {{name}}!</i></h2>
+    {% endfor %}
+    <br>
+
+    <h1>Conditional Logic in Jinja</h1><br>
+    {% if name == "Alice" %}
+        <h2><i>Welcome back, {{name}}!</i></h2>
+    {% else %}
+        <h2><i>Hello, {{name}}!</i></h2>
+    {% endif %}
+</body>
+</html>
